@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(
-      const MaterialApp(home: HomePage()),
-    );
+void main() => runApp(const MaterialApp(home: HomePage()));
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,10 +23,7 @@ class _HomePageState extends State<HomePage> {
             const Icon(Icons.person, size: 96),
             const Text('Sutee Onkaew - 67114264'),
             Text('Likes: $_likes'),
-            FilledButton(
-              onPressed: _like,
-              child: const Text('Like'),
-            ),
+            FilledButton(onPressed: _like, child: const Text('Like')),
           ],
         ),
       ),

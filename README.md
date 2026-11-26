@@ -1,17 +1,15 @@
 # lab01_profile
 
-A new Flutter project.
+| ประเภท   | input หรือการกระทำ            | ผลที่คาดหวัง                | ผลจริง                                                                                    |
+| :------- | :---------------------------- | :-------------------------- | :---------------------------------------------------------------------------------------- |
+| Normal   | เปิดแอป                       | title ไอคอน ชื่อ “Likes: 0” | แสดง title ไอคอน ชื่อ และ “Likes: 0” ถูกต้องตามที่คาดหวัง                                 |
+| Normal   | กด Like หนึ่งครั้ง            | “Likes: 1”                  | ตัวเลขเปลี่ยนเป็น “Likes: 1” ทันที                                                        |
+| Boundary | กด Like เร็ว ๆ 20 ครั้ง       | “Likes: 20” ไม่มี error     | ตัวเลขเพิ่มเป็น “Likes: 20” และไม่พบ error                                                |
+| Boundary | หมุนจอเป็นแนวนอน              | ยังอยู่กลางจอ ไม่ overflow  | เนื้อหายังอยู่กึ่งกลางจอปกติ                                                              |
+| Reload   | กด 3 ครั้ง แล้ว r แล้ว R      | หลัง r ได้ 3 · หลัง R ได้ 0 | หลังกด r ได้ “Likes: 3” ค่าเดิมยังอยู่ และหลังกด R รีเซ็ตกลับเป็น “Likes: 0”              |
+| Failure  | ปิด emulator แล้ว flutter run | ข้อความว่า ไม่พบ device     | ถ้า emulator ระบบจะแจ้งเตือนว่าไม่พบอุปกรณ์ หรือสลับไปถามให้เลือกรันบน Chrome/Windows แทน |
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+การใช้ Ai  ใช้ในการหาคำสั่ง git บางคำสั่งผมก็ลืมแล้ว
